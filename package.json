@@ -1,10 +1,23 @@
 {
-  "name": "cypress-image-snapshot",
+  "name": "@everywebco/cypress-image-snapshot",
   "version": "1.0.0",
   "description": "Cypress bindings for jest-image-snapshot.",
-  "repository": "https://github.com/palmerhq/cypress-image-snapshot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everywebco/cypress-image-snapshot.git"
+  },
   "author": "Jack Cross <jack@palmer.net>",
   "license": "MIT",
+  "keywords": [
+    "cypress",
+    "image",
+    "snapshot",
+    "plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/everywebco/cypress-image-snapshot/issues"
+  },
+  "homepage": "https://github.com/everywebco/cypress-image-snapshot#readme",
   "files": [
     "*.js"
   ],
@@ -16,9 +29,7 @@
     "build": "babel src --out-dir .",
     "test": "jest",
     "lint": "eslint src",
-    "prepublish": "npm run build",
-    "changeset": "changeset",
-    "release": "changeset publish"
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -29,8 +40,6 @@
     "term-img": "^4.0.0"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.2.8",
-    "@changesets/cli": "^2.13.1",
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
