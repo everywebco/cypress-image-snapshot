@@ -1,6 +1,6 @@
 {
   "name": "@everywebco/cypress-image-snapshot",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Cypress bindings for jest-image-snapshot.",
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/everywebco/cypress-image-snapshot#readme",
   "files": [
-    "*.js"
+    "*.js",
+    "*.d.ts"
   ],
   "engines": {
     "node": ">=8"
@@ -29,7 +30,8 @@
     "build": "babel src --out-dir .",
     "test": "jest",
     "lint": "eslint src",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish-package": "npm publish --access public"
   },
   "dependencies": {
     "chalk": "^2.4.1",
